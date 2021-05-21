@@ -34,6 +34,14 @@ def readData():
 
 
 def SplitData(data, M, k, seed):
+    '''
+
+    :param data:
+    :param M: 数据集按照均匀分布随机分为M份
+    :param k:
+    :param seed:
+    :return:
+    '''
     test = []
     train = []
     random.seed(seed)
@@ -57,7 +65,7 @@ def transform(oriData):
 
 if __name__ == '__main__':
     data = readData()
-    numFlod = 5  #
+    numFlod = 5  # 平均次数
     precision = 0
     recall = 0
     coverage = 0
